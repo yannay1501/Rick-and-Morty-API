@@ -1,7 +1,5 @@
-
 import requests
 import csv
-
 
 
 url = "https://rickandmortyapi.com/api/character/?species=human&status=alive" #link for species = human & status = alive
@@ -22,10 +20,6 @@ for character in characters:
 
         character_dict = {"name" : name, "location" : location, "image" : image}
         included.append(character_dict)
-
-
-
-print ()
 
 
 with open('results.csv', 'w', newline='') as file:
